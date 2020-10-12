@@ -15,7 +15,7 @@ app.get('/health',(req,res) => {
 });
 
 app.get('/',(req,res) => {
-    res.send(`<a href="http://localhost:7800/location" target="_blank">City</a> <br/> <a href="http://localhost:7800/mealtype" target="_blank">MealType</a> <br/> <a href="http://localhost:7800/cuisine" target="_blank">Cuisine</a> <br/> <a href="http://localhost:7800/restaurents" target="_blank">Restaurents</a> <br/> <a href="http://localhost:7800/orders" target="_blank">Orders</a>`)
+    res.send(`<a href="https://edureka-api.herokuapp.com/location" target="_blank">City</a> <br/> <a href="https://edureka-api.herokuapp.com/mealtype" target="_blank">MealType</a> <br/> <a href="https://edureka-api.herokuapp.com/cuisine" target="_blank">Cuisine</a> <br/> <a href="https://edureka-api.herokuapp.com/restaurents" target="_blank">Restaurents</a> <br/> <a href="https://edureka-api.herokuapp.com/orders" target="_blank">Orders</a>`)
 })
 
 //List of city
