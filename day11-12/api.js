@@ -31,7 +31,7 @@ app.get('/location',(req,res) => {
 
 //mealtype
 app.get('/mealtype',(req,res) => {
-    db.collection('mealType').find({}).toArray((err,result) => {
+    db.collection('mealtype').find({}).toArray((err,result) => {
         if(err) throw err;
         res.send(result)
     })
@@ -134,7 +134,7 @@ app.put('/updateorders',(req,res) => {
 
 MongoClient.connect(mongourl,(err,connection) => {
     if(err) throw err;
-    db = connection.db('edurekainternship');
+    db = connection.db('edureka');
     app.listen(port,(err) => {
         if(err) throw err;
         console.log(`Server is running on port ${port}`)
