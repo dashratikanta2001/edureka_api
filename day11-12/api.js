@@ -16,7 +16,6 @@ app.use(bodParser.json())
 app.get('/health',(req,res) => {
     res.send("Api is working")
 });
-
 app.get('/',(req,res) => {
     res.send(`<a href="https://edureka-api.herokuapp.com/location" target="_blank">City</a> <br/> <a href="https://edureka-api.herokuapp.com/mealtype" target="_blank">MealType</a> <br/> <a href="https://edureka-api.herokuapp.com/cuisine" target="_blank">Cuisine</a> <br/> <a href="https://edureka-api.herokuapp.com/restaurents" target="_blank">Restaurents</a> <br/> <a href="https://edureka-api.herokuapp.com/orders" target="_blank">Orders</a>`)
 })
