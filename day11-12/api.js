@@ -87,6 +87,9 @@ app.get('/restaurantlist/:mealtype', (req,res) => {
     }else if(req.query.lcost && req.query.hcost){
         query={"type.mealtype":req.params.mealtype,"cost":{$lt:parseInt(req.query.lcost),$gt:parseInt(req.query.hcost)} }
     }
+    else{
+        query={}
+    }
     db.collection('restaurent').find(query).sort(sort).toArray((err,result) =>{
         if(err) throw err;
         res.send(result)
